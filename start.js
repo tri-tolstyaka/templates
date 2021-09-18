@@ -8,7 +8,6 @@ app.get("/", (req, res) => {
 		apps: JSON.stringify({
 			foo: {
 				version: "1.0.0",
-				name: "foo",
 			},
 		}),
 		// all pages and sub-pages
