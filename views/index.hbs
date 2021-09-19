@@ -14,7 +14,9 @@
 <body>
     {{!-- baseUrl - static server --}}
     {{!-- in dev server this url will be caught and the valid lib will be returned --}}
-    <script src="{{{baseUrl}}}/fire.app/{{{fireAppVersion}}}/index.js">
+    <script src="{{{baseUrl}}}/fire.app/{{{fireAppVersion}}}/index.js"></script>
+
+    <script>
         // The utilization of the loaded app
         fireApp({
             apps: {{{apps}}},
