@@ -6,8 +6,4 @@ module.exports = function applyHbs(app) {
 	app.engine("hbs", hbs.express4({}));
 	app.set("view engine", "hbs");
 	app.set("views", __dirname + "/views");
-
-	hbs.registerHelper('toJSON', function (context) {
-		return JSON.stringify(context);
-	});
 };

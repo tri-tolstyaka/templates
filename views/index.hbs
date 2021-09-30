@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>body {margin:0; padding: 0;}</style>
+    <style></style>
     <link 
         rel="icon" 
         href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnubo.ru%2Fpavel_egorov%2Frussian%2Frve2701.jpg&f=1&nofb=1" 
         type="image/x-icon">
-    <title>{{{ title }}}</title>
+    <title>{{{title}}}</title>
 </head>
 <body>
     {{!-- baseUrl - static server --}}
@@ -19,11 +19,12 @@
     <script>
         // The utilization of the loaded app
         fireApp({
-            apps: {{{ toJSON apps }}},
-            navigations: {{{ toJSON navigations }}},
-            config: {{{ toJSON config }}}
+            apps: {{{apps}}},
+            navigations: {{{navigations}}},
+            config: {{{config}}}
         })
     </script>
+
     <div id="root"></div>
 </body>
 </html>

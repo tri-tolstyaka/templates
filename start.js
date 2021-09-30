@@ -4,18 +4,18 @@ const app = require("express")();
 applyHbs(app);
 app.get("/", (req, res) => {
 	res.render("index", {
-		title: "My app",
-		apps: {
+		title: "Tri tolstiaka",
+		apps: JSON.stringify({
 			foo: {
 				version: "1.0.0",
 			},
-		},
+		}),
 		// all pages and sub-pages
-		navigations: {
+		navigations: JSON.stringify({
 			"dummy.main": "/dummy",
 			"dummy.login": "dummy/login",
-		},
-		config: {},
+		}),
+		config: JSON.stringify({}),
 		baseUrl: "/static",
 		fireAppVersion: "0.0.2",
 	});
