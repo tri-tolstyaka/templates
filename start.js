@@ -5,17 +5,17 @@ applyHbs(app);
 app.get("/", (req, res) => {
 	res.render("index", {
 		title: "My app",
-		apps: JSON.stringify({
+		apps: {
 			foo: {
 				version: "1.0.0",
 			},
-		}),
+		},
 		// all pages and sub-pages
-		navigations: JSON.stringify({
+		navigations: {
 			"dummy.main": "/dummy",
 			"dummy.login": "dummy/login",
-		}),
-		config: JSON.stringify({}),
+		},
+		config: {},
 		baseUrl: "/static",
 		fireAppVersion: "0.0.2",
 	});
